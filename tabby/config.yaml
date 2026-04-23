@@ -1,0 +1,295 @@
+version: 8
+profiles:
+  - type: local
+    name: 1P Backend
+    icon: >-
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><polygon
+      points="256,10 310,80 400,60 430,140 500,180 460,260 500,340 430,380
+      400,460 310,440 256,502 202,440 112,460 82,380 12,340 52,260 12,180 82,140
+      112,60 202,80" fill="#000000"/><polygon points="256,40 300,100 380,85
+      405,150 465,185 430,256 465,327 405,362 380,427 300,412 256,472 212,412
+      132,427 107,362 47,327 82,256 47,185 107,150 132,85 212,100"
+      fill="#f2f2f2"/><polygon points="256,70 420,150 390,360 256,460 122,360
+      92,150" fill="#1f7fb6"/><polygon points="256,70 92,150 256,260"
+      fill="#6bb5d6"/><polygon points="256,260 122,360 256,460"
+      fill="#6bb5d6"/><text x="50%" y="55%" text-anchor="middle" font-size="200"
+      font-family="Georgia, serif" fill="#ffffff"
+      dominant-baseline="middle">1P</text></svg>
+    options:
+      command: C:\Program Files\Git\bin\bash.exe
+      args:
+        - '--login'
+        - '-i'
+      env:
+        WT_SESSION: 0
+      cwd: C:\Users\rcole\pentagon_backend
+    disableDynamicTitle: true
+    id: local:custom:1P-Backend:27215bfa-598b-4d96-ac07-e5535d6645a0
+  - type: local
+    name: 1P Frontend
+    icon: >-
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><polygon
+      points="256,10 310,80 400,60 430,140 500,180 460,260 500,340 430,380
+      400,460 310,440 256,502 202,440 112,460 82,380 12,340 52,260 12,180 82,140
+      112,60 202,80" fill="#000000"/><polygon points="256,40 300,100 380,85
+      405,150 465,185 430,256 465,327 405,362 380,427 300,412 256,472 212,412
+      132,427 107,362 47,327 82,256 47,185 107,150 132,85 212,100"
+      fill="#f2f2f2"/><polygon points="256,70 420,150 390,360 256,460 122,360
+      92,150" fill="#1f7fb6"/><polygon points="256,70 92,150 256,260"
+      fill="#6bb5d6"/><polygon points="256,260 122,360 256,460"
+      fill="#6bb5d6"/><text x="50%" y="55%" text-anchor="middle" font-size="200"
+      font-family="Georgia, serif" fill="#ffffff"
+      dominant-baseline="middle">1P</text></svg>
+    options:
+      command: C:\Program Files\Git\bin\bash.exe
+      args:
+        - '--login'
+        - '-i'
+      env:
+        WT_SESSION: 0
+      cwd: C:\Users\rcole\pentagon_frontend
+    disableDynamicTitle: true
+    id: local:custom:1P-Frontend-copy:a57f3a27-c847-42b6-ad3b-51ca343a0a28
+groups: []
+configSync:
+  parts: {}
+hotkeys:
+  copy-current-path: []
+  ctrl-c:
+    - Ctrl-C
+  copy:
+    - Ctrl-Shift-C
+  paste:
+    - Ctrl-Shift-V
+    - Shift-Insert
+  select-all:
+    - Ctrl-Shift-A
+  clear: []
+  zoom-in:
+    - Ctrl-=
+    - Ctrl-Shift-=
+  zoom-out:
+    - Ctrl--
+    - Ctrl-Shift--
+  reset-zoom:
+    - Ctrl-0
+  home:
+    - Home
+  end:
+    - End
+  previous-word:
+    - Ctrl-Left
+  next-word:
+    - Ctrl-Right
+  delete-previous-word:
+    - Ctrl-Backspace
+  delete-line:
+    - Ctrl-Shift-Backspace
+  delete-next-word:
+    - Ctrl-Delete
+  search:
+    - Ctrl-Shift-F
+  pane-focus-all:
+    - Ctrl-Shift-I
+  focus-all-tabs:
+    - Ctrl-Alt-Shift-I
+  scroll-to-top:
+    - Ctrl-PageUp
+  scroll-page-up:
+    - Alt-PageUp
+  scroll-up:
+    - Ctrl-Shift-Up
+  scroll-down:
+    - Ctrl-Shift-Down
+  scroll-page-down:
+    - Alt-PageDown
+  scroll-to-bottom:
+    - Ctrl-PageDown
+  restart-telnet-session: []
+  restart-ssh-session: []
+  launch-winscp: []
+  settings-tab: {}
+  settings:
+    - Ctrl-,
+  serial:
+    - Alt-K
+  restart-serial-session: []
+  new-tab:
+    - Ctrl-Shift-T
+  new-window:
+    - Ctrl-Shift-N
+  profile: {}
+  profile-selectors: {}
+  group-selectors: {}
+  toggle-fullscreen:
+    - F11
+    - Alt-Enter
+  close-tab:
+    - Ctrl-Shift-W
+  reopen-tab:
+    - Ctrl-Shift-Z
+  toggle-last-tab: []
+  rename-tab:
+    - Ctrl-Shift-R
+  next-tab:
+    - Ctrl-Shift-Right
+    - Ctrl-Tab
+  previous-tab:
+    - Ctrl-Shift-Left
+    - Ctrl-Shift-Tab
+  move-tab-left:
+    - Ctrl-Shift-PageUp
+  move-tab-right:
+    - Ctrl-Shift-PageDown
+  rearrange-panes:
+    - Ctrl-Shift
+  duplicate-tab: []
+  restart-tab: []
+  reconnect-tab: []
+  disconnect-tab: []
+  explode-tab:
+    - Ctrl-Shift-.
+  combine-tabs:
+    - Ctrl-Shift-,
+  tab-1:
+    - Alt-1
+  tab-2:
+    - Alt-2
+  tab-3:
+    - Alt-3
+  tab-4:
+    - Alt-4
+  tab-5:
+    - Alt-5
+  tab-6:
+    - Alt-6
+  tab-7:
+    - Alt-7
+  tab-8:
+    - Alt-8
+  tab-9:
+    - Alt-9
+  tab-10:
+    - Alt-0
+  tab-11: []
+  tab-12: []
+  tab-13: []
+  tab-14: []
+  tab-15: []
+  tab-16: []
+  tab-17: []
+  tab-18: []
+  tab-19: []
+  tab-20: []
+  split-right:
+    - Ctrl-Shift-S
+  split-bottom:
+    - Ctrl-Shift-D
+  split-left: []
+  split-top: []
+  pane-nav-right:
+    - Ctrl-Alt-Right
+  pane-nav-down:
+    - Ctrl-Alt-Down
+  pane-nav-up:
+    - Ctrl-Alt-Up
+  pane-nav-left:
+    - Ctrl-Alt-Left
+  pane-nav-previous:
+    - Ctrl-Alt-[
+  pane-nav-next:
+    - Ctrl-Alt-]
+  pane-nav-1: []
+  pane-nav-2: []
+  pane-nav-3: []
+  pane-nav-4: []
+  pane-nav-5: []
+  pane-nav-6: []
+  pane-nav-7: []
+  pane-nav-8: []
+  pane-nav-9: []
+  pane-maximize:
+    - Ctrl-Alt-Enter
+  close-pane:
+    - Escape
+  pane-increase-vertical: []
+  pane-decrease-vertical: []
+  pane-increase-horizontal: []
+  pane-decrease-horizontal: []
+  switch-profile:
+    - Ctrl-Alt-T
+  profile-selector:
+    - Ctrl-Shift-E
+  command-selector:
+    - Ctrl-Shift-P
+  toggle-window: []
+terminal:
+  searchOptions: {}
+  colorScheme:
+    name: Tabby Default
+    foreground: '#cacaca'
+    background: '#171717'
+    cursor: '#bbbbbb'
+    colors:
+      - '#000000'
+      - '#ff615a'
+      - '#b1e969'
+      - '#ebd99c'
+      - '#5da9f6'
+      - '#e86aff'
+      - '#82fff7'
+      - '#dedacf'
+      - '#313131'
+      - '#f58c80'
+      - '#ddf88f'
+      - '#eee5b2'
+      - '#a5c7ff'
+      - '#ddaaff'
+      - '#b7fff9'
+      - '#ffffff'
+  font: Fira Code
+  ligatures: true
+  fontSize: 18
+  customColorSchemes: []
+  lightColorScheme:
+    name: Tabby Default Light
+    foreground: '#4d4d4c'
+    background: '#ffffff'
+    cursor: '#4d4d4c'
+    colors:
+      - '#000000'
+      - '#c82829'
+      - '#718c00'
+      - '#eab700'
+      - '#4271ae'
+      - '#8959a8'
+      - '#3e999f'
+      - '#ffffff'
+      - '#000000'
+      - '#c82829'
+      - '#718c00'
+      - '#eab700'
+      - '#4271ae'
+      - '#8959a8'
+      - '#3e999f'
+      - '#ffffff'
+  showTabProfileIcon: true
+ssh: {}
+clickableLinks: {}
+accessibility: {}
+appearance: {}
+hacks: {}
+providerBlacklist: []
+commandBlacklist: []
+enableAnalytics: false
+enableWelcomeTab: false
+pluginBlacklist: []
+profileBlacklist: []
+profileDefaults:
+  ssh:
+    disableDynamicTitle: true
+plugin:
+  serverStats:
+    location: {}
+    style: {}
+    customMetrics: []
