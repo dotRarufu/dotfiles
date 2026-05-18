@@ -1,0 +1,69 @@
+{
+  // Custom UI
+  "custom-ui-style.stylesheet": {
+    // terminal panel controls fix
+    ".bottom .monaco-action-bar .actions-container": "justify-content: end",
+    ".bottom .global-actions": "width: 100%",
+
+    // editor divider
+    ".monaco-split-view2.separator-border>.monaco-scrollable-element>.split-view-container>.split-view-view:not(:first-child):before": "background-color: transparent",
+
+    // editor border
+    ".editor .split-view-view.visible": "border: 1px solid #31343a !important; height: calc(100% - 2px) !important; overflow: clip;",
+
+    // global font
+    ".windows": "font-family: 'Geist Mono' !important",
+
+    // file explorer border
+    ".sidebar": "border: 1px solid #31343a; height: 100%",
+
+    // bottom activity bar
+    ".sidebar .footer .actions-container": "gap: 1rem",
+
+    // terminal panel border
+    ".panel.bottom": "border: 1px solid #31343a; height: 100%;",
+
+    // command panel
+    ".quick-input-widget.show-file-icons": "box-shadow: none !important",
+    ".quick-input-widget": "top: 25vh !important; background: #181c1c !important; border-radius: 0px !important; border: 1px solid #31343a !important;",
+    // ".quick-input-list": "background-color: #181c1c !important;",
+    ".quick-input-list .scrollbar": "display: none",
+    ".quick-input-titlebar": "background: #181c1c !important",
+    ".monaco-action-bar.quick-input-inline-action-bar": "display: none",
+
+    ".monaco-workbench .part.panel.bottom .composite.title": "border-top-width: 0px",
+    ".notification-toast": "box-shadow: none !important",
+    ".editor-widget.find-widget": "box-shadow: none; border-radius: 0px",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title.title-border-bottom:after": "display: none",
+    ".monaco-scrollable-element > .shadow.top": "display: none",
+    ".sidebar .title-label": "padding: 0 !important",
+    // ".sidebar": "border: none !important",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "outline: none !important",
+    ".monaco-list-row.focused": "outline: none !important",
+    ".monaco-editor .scroll-decoration": "display: none",
+    ".title-actions": "display: none !important",
+    ".title.show-file-icons .label-container .monaco-icon-label.file-icon": "justify-content: center; padding: 0 !important",
+    ".title .monaco-icon-label:after": "margin-right: 0",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title > .label-container > .title-label": "padding-left: 60px",
+
+    // messes with file breadcrumbs
+    // ".title .monaco-icon-label.file-icon": "margin: 0 60px",
+
+    // add space on left of line numbers
+    ".margin-view-overlays": "margin-left: 12px",
+
+    // change line numbers color
+    ".line-numbers": "color: #30363D !important",
+
+    ".xterm-decoration-overview-ruler": "display: none"
+    // ".monaco-split-view2 .horizontal > .monaco-scrollable-element > .split-view-container > .split-view-view": "border-left: 1px solid transparent !important"
+
+    // ".monaco-workbench > .monaco-grid-view > .monaco-grid-branch-node > .monaco-split-view2 > .monaco-scrollable-element > .split-view-container": "display: flex !important; flex-direction: column !important;",
+    // ".monaco-workbench > .monaco-grid-view > .monaco-grid-branch-node > .monaco-split-view2 > .monaco-scrollable-element > .split-view-container > .split-view-view.visible": "top: auto !important; position: relative !important;",
+    // ".monaco-workbench > .monaco-grid-view > .monaco-grid-branch-node > .monaco-split-view2 > .monaco-scrollable-element > .split-view-container > .split-view-view.visible:last-child": "top: auto !important; position: relative !important; order: -1 !important;",
+    // ".monaco-workbench .part.statusbar": "border-bottom: 1px solid var(--vscode-sideBar-border);"
+  },
+  "window.menuBarVisibility": "toggle",
+  "window.customTitleBarVisibility": "windowed",
+  "window.restoreFullscreen": true
+}
