@@ -9,19 +9,20 @@
     ".monaco-split-view2.separator-border>.monaco-scrollable-element>.split-view-container>.split-view-view:not(:first-child):before": "background-color: transparent",
 
     // editor border
-    ".editor .split-view-view.visible": "border: 1px solid #31343a !important; height: calc(100% - 2px) !important; overflow: clip;",
+    ".editor .split-view-view.visible": "border: 1px solid #31343a !important; border-bottom: 0px !important; height: calc(100% - 2px) !important; overflow: clip;",
 
     // global font
     ".windows": "font-family: 'Geist Mono' !important",
 
     // file explorer border
-    ".sidebar": "border: 1px solid #31343a; height: 100%",
+    ".sidebar": "border: 1px solid #31343a; border-bottom: 0px !important; height: 100%",
 
     // bottom activity bar
     ".sidebar .footer .actions-container": "gap: 1rem",
 
     // terminal panel border
-    ".panel.bottom": "border: 1px solid #31343a; height: 100%;",
+    // ".panel.bottom": "border: 1px solid #31343a; height: 100%;",
+    ".panel.bottom": "border-top: 1px solid #31343a;",
 
     // command panel
     ".quick-input-widget.show-file-icons": "box-shadow: none !important",
@@ -54,6 +55,21 @@
 
     // change line numbers color
     ".line-numbers": "color: #30363D !important",
+
+    // add border-top in status bar
+    "#workbench\\.parts\\.statusbar": "border-top: 1px solid #31343a !important",
+
+    // add border in explorer tabs
+    ".part.sidebar .content": "border-bottom: 1px solid #31343a !important; border-top: 1px solid #31343a !important",
+
+    // hide explorer tabs line indicator when active
+    ".composite-bar .action-item.checked .active-item-indicator": "display: none !important",
+
+    // style explorer pane headers
+    ".split-view-view.visible .pane.vertical .pane-header": "border-bottom: 1px solid #31343a !important",
+
+    // add border in terminal panel header
+    "#workbench\\.parts\\.panel .composite.title": "border-bottom: 1px solid #31343a !important",
 
     ".xterm-decoration-overview-ruler": "display: none"
     // ".monaco-split-view2 .horizontal > .monaco-scrollable-element > .split-view-container > .split-view-view": "border-left: 1px solid transparent !important"
