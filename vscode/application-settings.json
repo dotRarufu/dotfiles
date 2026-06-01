@@ -71,7 +71,7 @@
     // add border in terminal panel header
     "#workbench\\.parts\\.panel .composite.title": "border-bottom: 1px solid #31343a !important; border-top: 1px solid #31343a !important;",
 
-    ".xterm-decoration-overview-ruler": "display: none",
+    ".xterm-decoration-overview-ruler": "display: none"
     // ".monaco-split-view2 .horizontal > .monaco-scrollable-element > .split-view-container > .split-view-view": "border-left: 1px solid transparent !important"
 
     // ".monaco-workbench > .monaco-grid-view > .monaco-grid-branch-node > .monaco-split-view2 > .monaco-scrollable-element > .split-view-container": "display: flex !important; flex-direction: column !important;",
@@ -81,5 +81,5 @@
   },
   "window.menuBarVisibility": "toggle",
   "window.customTitleBarVisibility": "windowed",
-  "window.restoreFullscreen": true,
+  "window.restoreFullscreen": true
 }

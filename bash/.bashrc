@@ -47,3 +47,6 @@ gcm() {
 
   git commit -m "${stickers}${message}" "${git_flags[@]}"
 }
+
+
+ulc() { git reset --mixed HEAD~1; }
