@@ -50,3 +50,19 @@ gcm() {
 
 
 ulc() { git reset --mixed HEAD~1; }
+
+bld() {
+  npm run build
+}
+
+ga.() {
+  git add .
+}
+
+gsa() {
+  git stash apply
+}
+
+gp() {
+  git push
+}
