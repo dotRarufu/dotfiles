@@ -66,3 +66,26 @@ gsa() {
 gp() {
   git push
 }
+
+gca() {
+  local message=()
+  local args=()
+
+  while [[ $# -gt 0 ]]; do
+    if [[ "$1" == "--" ]]; then
+      shift
+      args=("$@")
+      break
+    fi
+
+    message+=("$1")
+    shift
+  done
+
+  if [[ ${#message[@]} -eq 0 ]]; then
+    echo "Usage: gca <commit message> [-- <git commit --amend args>]"
+    return 1
+  fi
+
+  git commit --amend -m "${message[*]}" "${args[@]}"
+}
