@@ -1,0 +1,47 @@
+% My Shell Commands
+% Personal shortcuts for Git, npm, and local Git excludes
+
+# Git stash all including untracked files
+gst
+
+# Git stash with a message
+gst <message>
+
+# Git commit
+gcm <message>
+
+# Git commit with sticker
+gcm -s <sticker> <message>
+
+# Git commit with Git flags
+gcm <message> -- <git flags>
+
+# Undo last commit, keep changes staged/unstaged
+ulc
+
+# Build the project
+bld
+
+# Stage all changes
+ga.
+
+# Apply latest stash
+gsa
+
+# Git push
+gp
+
+# Git amend commit
+gca <message>
+
+# Git amend with Git flags
+gca <message> -- <git flags>
+
+# Add file/pattern to local Git excludes
+gex add <file-or-pattern>
+
+# Remove file/pattern from local Git excludes
+gex remove <file-or-pattern>
+
+# List locally excluded files
+gex list
