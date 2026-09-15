@@ -89,3 +89,72 @@ gca() {
 
   git commit --amend -m "${message[*]}" "${args[@]}"
 }
+
+gex() {
+    local file=".git/info/exclude"
+    local command="${1:-}"
+    local entry="${2:-}"
+
+    if [[ ! -d .git ]]; then
+        echo "Error: not a Git repository"
+        return 1
+    fi
+
+    case "$command" in
+        add)
+            if [[ -z "$entry" ]]; then
+                echo "Usage: gex add <file-or-pattern>"
+                return 1
+            fi
+
+            if grep -Fxq "$entry" "$file" 2>/dev/null; then
+                echo "Already excluded: $entry"
+                return 0
+            fi
+
+            echo "$entry" >> "$file"
+            echo "Excluded: $entry"
+            ;;
+
+        remove|rm)
+            if [[ -z "$entry" ]]; then
+                echo "Usage: gex remove <file-or-pattern>"
+                return 1
+            fi
+
+            if ! grep -Fxq "$entry" "$file" 2>/dev/null; then
+                echo "Not found: $entry"
+                return 0
+            fi
+
+            grep -Fxv "$entry" "$file" > "$file.tmp" &&
+                mv "$file.tmp" "$file"
+
+            echo "Removed: $entry"
+            ;;
+
+        list|ls)
+            if [[ ! -f "$file" ]]; then
+                echo "No locally excluded files."
+                return 0
+            fi
+
+            local entries
+            entries=$(grep -vE '^[[:space:]]*(#|$)' "$file")
+
+            if [[ -z "$entries" ]]; then
+                echo "No locally excluded files."
+            else
+                echo "$entries"
+            fi
+            ;;
+
+        *)
+            echo "Usage:"
+            echo "  gex add <file-or-pattern>"
+            echo "  gex remove <file-or-pattern>"
+            echo "  gex list"
+            return 1
+            ;;
+    esac
+}
