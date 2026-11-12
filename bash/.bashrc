@@ -163,7 +163,7 @@ gstc() {
   local message="${*:-Backup $(date '+%Y-%m-%d %H:%M:%S')}"
   local commit
 
-  commit=$(git stash create) || return 1
+  commit=$(git stash create "$message") || return 1
 
   if [[ -z "$commit" ]]; then
     echo "No changes to stash."
