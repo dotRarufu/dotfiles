@@ -158,3 +158,17 @@ gex() {
             ;;
     esac
 }
+
+gstc() {
+  local message="${*:-Backup $(date '+%Y-%m-%d %H:%M:%S')}"
+  local commit
+
+  commit=$(git stash create) || return 1
+
+  if [[ -z "$commit" ]]; then
+    echo "No changes to stash."
+    return 0
+  fi
+
+  git stash store -m "$message" "$commit"
+}
